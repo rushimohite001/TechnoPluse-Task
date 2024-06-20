@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('https://as2.ftcdn.net/v2/jpg/08/08/07/69/1000_F_808076910_ORy2GPeeOWzWUyCw3TFQI4QosBBolbyR.jpg');
+    /* background-image: url("https://as2.ftcdn.net/v2/jpg/07/41/16/53/1000_F_741165329_WlssVmwvQPL5EDGhnsaHquM7FnuliKQF.jpg"); */
+    /* background-image: url("Task 4/Assets/image.jpg"); */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #333; 
+}
+
+.container {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    tr {
+        margin-bottom: 15px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: right;
+    }
+    
+    th::before, td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    th, td {
+        text-align: left;
+    }
+}
