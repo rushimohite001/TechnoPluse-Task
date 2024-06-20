@@ -14,11 +14,13 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+    
 }
 
 .logo img {
     height: 80px;
     width: auto;
+    align-items: center;
 }
 
 

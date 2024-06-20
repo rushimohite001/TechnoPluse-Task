@@ -1,0 +1,172 @@
+/* styles.css */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    background-image: url(gym1.jpg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* align-items: center; */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    text-align: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    text-align: right;
+}
+
+.profile p {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Main content sections */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stat-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin-bottom: 10px;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.schedule table, .schedule th, .schedule td {
+    border: 1px solid #ddd;
+}
+
+.schedule th, .schedule td {
+    padding: 10px;
+    text-align: center;
+}
+
+.members .member-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.members .member-list li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
